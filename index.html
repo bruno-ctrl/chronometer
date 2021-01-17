@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Cronometro</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <h1>Cronometro</h1>  
+  <p>minutes</p>
+  <select name="Minute" id="minute" class="form-select" ></select>
+  <p>second</p>
+  <select name="second" id="second" class="form-select" ></select>
+  <p></p>
+  <button id="begin" class="btn btn-success" onclick="start()">begin</button>
+  <button id ="stop" class="btn btn-warning" onclick="stopTime()">stop</button>
+  <button id="recovery" class="btn btn-primary" onclick="recoveryTime()" >recovery</button>
+  <p></p>
+ 
+  <div id="display">
+      <h3></h3>
+  </div>
+  
+  
+</body>
+<script src="index.js"></script>
+
+</html>

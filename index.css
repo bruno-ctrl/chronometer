@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+h1{
+    font-size :100px;
+    text-shadow:   3px 4px red, 3px 3px red;
+    text-align:center;
+}
+button{
+    font-size: 20px;
+   
+    background-color: red;
+    color:white
+}
+p{
+    font-size: 30px;
+    text-align: center;
+}
+select{
+    width: 3em !important;
+    margin:auto 0;
+    
+
+
+}
