@@ -3,7 +3,7 @@ var minute = document.getElementById('minute');
 var second = document.getElementById('second');
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');
-var recovery = document.getElementById('recovery');
+var resume = document.getElementById('resume');
 
 
 var chronometerSec;
@@ -30,12 +30,13 @@ function displayTime(){
     interval= setInterval(function(){
         actuallySecond--;
         if(actuallySecond <= 0){
+        
             if(actuallyMinute > 0){
                 actuallyMinute--;
                 actuallySecond = 59;
             
         }else{
-            alert('fim do Cronometro')
+            alert('end of the timer')
             clearInterval(interval);
             
         }
@@ -52,7 +53,7 @@ stop.addEventListener('click',function(){
 })
    
 
-recovery.addEventListener('click',function(){
+resume.addEventListener('click',function(){
     clearInterval(interval);
     actuallySecond = 0;
     actuallyMinute = 0;
