@@ -1,10 +1,12 @@
 body{
-    text-align: center;
+    text-align: center !important;
+    align-items: center !important;
 }
 h1{
     font-size :100px;
-    text-shadow:   3px 4px red, 3px 3px red;
+    text-shadow:   3px 4px yellow, 3px 3px yellow;
     text-align:center;
+    color: green;
 }
 button{
     font-size: 20px;
@@ -17,9 +19,11 @@ p{
     text-align: center;
 }
 select{
-    width: 3em !important;
-    margin:auto 0;
+    width: 60px !important;
+    display: inline !important;
+    align-items: center !important;
+    margin: auto 0;
+    padding: 10px 10px 10px 10px !important;
     
-
-
+    
 }

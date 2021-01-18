@@ -1,7 +1,7 @@
 var display = document.getElementById('display');
 var minute = document.getElementById('minute');
 var second = document.getElementById('second');
-var begin = document.getElementById('begin');
+var start = document.getElementById('start');
 var stop = document.getElementById('stop');
 var recovery = document.getElementById('recovery');
 
@@ -21,13 +21,12 @@ function displayTime(){
 }
 // começando o cronometro
 
-function start(){
-    begin.addEventListener('click',function(){
+  start.addEventListener('click',function (){
     actuallyMinute = minute.value;
     actuallySecond = second.value;
 
-     displayTime();
-    
+    displayTime();
+
     interval= setInterval(function(){
         actuallySecond--;
         if(actuallySecond <= 0){
@@ -40,43 +39,27 @@ function start(){
             clearInterval(interval);
             
         }
-        if(stopTime.onclick == true){
-            stopTime();
-        }
-    }
-     displayTime()
-   
-     
-     display.childNodes[1].innerHTML = actuallyMinute+':'+actuallySecond;
+    } 
+        displayTime();
     
 },1000);
-    
-    
-})}
+  
+  })
 
-function stopTime(){
-     stop.addEventListener('click',function(){
-      
-    let breakSecond = actuallySecond;
-    let breakMinute = actuallyMinute;
-    display.childNodes[1].innerHTML = breakMinute+':'+breakSecond;
+stop.addEventListener('click',function(){
+     clearInterval(interval);
+     
+})
+   
 
-    if(onclick == true){
-      start()
-    }
+recovery.addEventListener('click',function(){
+    clearInterval(interval);
+    actuallySecond = 0;
+    actuallyMinute = 0;
+    display.childNodes[1].innerHTML = actuallyMinute+':'+actuallySecond;
+   
+})
+
+    
      
     
-     })
-    }
-
-function recoveryTime(){
-
-
-     recovery.addEventListener('click',function(){
-          actuallyMinute = 0;
-          actuallySecond = 0;
-         displayTime();
-        start();
-
-     })
-    }
