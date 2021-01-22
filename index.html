@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Calculator</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body> 
+    <h1>Calculator</h1>
+    <form action='' name='a'>
+   <div class='calc'>
+    <div>
+            <input type='text' id='display' displayCalc()>
+    </div>
+    <div class='container-1'>
+            <button id='btn-ce' class='btn-red' type='button ' style='width:108px' onclick='reseta()'>CE</button>
+            <button coolspan=2 id='btn-C'  type='button' style='width:108px' onclick='limpar()'>C</button>    
+           
+    </div>  
+    <div class='container-2'>
+            <button id='btn-7' type='button'value=7 onclick='botao(value)'>7</button>
+            <button id='btn-8' type='button'value=8 onclick='botao(value)'>8</button>
+            <button id='btn-9' type='button'value=9 onclick='botao(value)'>9</button>
+            <button id='btn--' type='button'value='-'onclick='botao(value)'>-</button>
+    </div>
+    <div class='container-3'>
+            <button id='btn-4' type='button'value=4 onclick='botao(value)'>4</button>
+            <button id='btn-5' type='button'value=5 onclick='botao(value)'>5</button>
+            <button id='btn-6' type='button'value=6 onclick='botao(value)'>6</button>
+            <button  id='btn-/' type='button' value='/' onclick='botao(value)'>/</button>
+    </div>   
+    <div class='container-4'>
+            <button id='btn-1' type='button'value=1 onclick='botao(value)'>1</button>
+            <button id='btn-2' type='button'value=2 onclick='botao(value)'>2</button>
+            <button id='btn-3' type='button'value=3 onclick='botao(value)'>3</button>
+            <button id='btn-+' type='button'value='+' onclick='botao(value)'>+</button>
+    </div>
+    <div class='container-5'> 
+            <button id='btn-0' type='button' value=0 onclick='botao(value)'>0</button>
+            <button id='btn-.' type='button' value='.' onclick='botao(value)'>.</button>
+            <button id='btn-*' type='button' value='*'onclick='botao(value)'>*</button>
+            <button id='btn-=' type='button' value='='class='btn-red' onclick='calcula()'>=</button>
+        
+    </div>  
+    </div>
+</form>
+    <script src='main.js'></script>
+</body>
+</html>

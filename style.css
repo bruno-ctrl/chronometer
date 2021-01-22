@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+button{
+   width: 50px;
+   height: 50px;
+   margin: 2px;
+   background-color: gray;
+   border: 1px solid rgb(0,0,0.25);
+   font-size: 18px;
+   color: white;
+  
+}
+h1{
+    top: 26%;
+    left: 45%;
+    position: absolute; 
+}
+#display{
+    border: solid black;
+    width: 203px;
+    padding: 10px;
+    font-size: 20px;
+}
+.container-4{
+   left:40px;
+}
+
+.calc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+button:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+.btn-red{
+   background-color: red
+}
+
