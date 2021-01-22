@@ -15,6 +15,9 @@ for(var i = 0; i <= 60; i ++){
     minute.innerHTML+='<option value ="'+i+'">'+i+'</option>';
     second.innerHTML+='<option value ="'+i+'">'+i+'</option>';
 }
+
+
+
 // display
 function displayTime(){
     display.childNodes[1].innerHTML = actuallyMinute+':'+actuallySecond;
@@ -28,9 +31,10 @@ function displayTime(){
     displayTime();
 
     interval= setInterval(function(){
-        actuallySecond--;
-        if(actuallySecond <= 0){
         
+         actuallySecond--;
+        if(actuallySecond <= 0){
+           
             if(actuallyMinute > 0){
                 actuallyMinute--;
                 actuallySecond = 59;
@@ -40,9 +44,10 @@ function displayTime(){
             clearInterval(interval);
             
         }
+       
     } 
-        displayTime();
-    
+    displayTime();
+  
 },1000);
   
   })
@@ -58,6 +63,7 @@ resume.addEventListener('click',function(){
     actuallySecond = 0;
     actuallyMinute = 0;
     display.childNodes[1].innerHTML = actuallyMinute+':'+actuallySecond;
+   alert('end of the timer')
    
 })
 
