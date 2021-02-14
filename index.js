@@ -20,15 +20,17 @@ for(var i = 0; i <= 60; i ++){
 
 // display
 function displayTime(){
+    
     display.childNodes[1].innerHTML = actuallyMinute+':'+actuallySecond;
 }
 // começando o cronometro
 
   start.addEventListener('click',function (){
+    
     actuallyMinute = minute.value;
     actuallySecond = second.value;
-
     displayTime();
+  
 
     interval= setInterval(function(){
         

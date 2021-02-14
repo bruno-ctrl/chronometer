@@ -1,29 +1,37 @@
 body{
-    text-align: center !important;
-    align-items: center !important;
+    text-align: center ;
+    align-items: center ;
+    font-size :100%;
 }
+
+.container{
+    position: absolute;
+    top: 22%;
+    right: 15%;
+}
+
 h1{
-    font-size :100px;
-    text-shadow:   3px 4px yellow, 3px 3px yellow;
+    text-shadow:   2px 2px yellow, 1px 1px yellow;
     text-align:center;
     color: green;
 }
+
 button{
     font-size: 20px;
    
     background-color: red;
     color:white
 }
+
 p{
     font-size: 30px;
     text-align: center;
 }
-select{
-    width: 60px !important;
-    display: inline !important;
-    align-items: center !important;
+
+.form-select{
+    width: 60px ;
+    display: inline;
+    align-items: center ;
     margin: auto 0;
-    padding: 10px 10px 10px 10px !important;
-    
-    
-}
+}   
+
